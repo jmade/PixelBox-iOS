@@ -1,0 +1,789 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1901D8F5C0208CC8D6BFA021 /* Pods_PixelBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E23DE619341AA21021A265F /* Pods_PixelBox.framework */; };
+		4926D4B9212B783F003DD4AE /* ColorWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4926D4B8212B783F003DD4AE /* ColorWheel.swift */; };
+		4941315E212C775200909461 /* ImageSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4941315D212C775200909461 /* ImageSave.swift */; };
+		49558DE42131CA45003190A7 /* SavingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49558DE32131CA45003190A7 /* SavingData.swift */; };
+		49558DE62131CA71003190A7 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49558DE52131CA71003190A7 /* Activity.swift */; };
+		499191A321443F4F00B82E2E /* pxl.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499191A221443F4F00B82E2E /* pxl.pb.swift */; };
+		499F63D22151EDAD001DBD8F /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499F63D12151EDAD001DBD8F /* IntentHandler.swift */; };
+		499F63DA2151EDAD001DBD8F /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 499F63D92151EDAD001DBD8F /* IntentsUI.framework */; };
+		499F63DD2151EDAD001DBD8F /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499F63DC2151EDAD001DBD8F /* IntentViewController.swift */; };
+		499F63E42151EDAD001DBD8F /* PixelBoxIntentsUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 499F63D82151EDAD001DBD8F /* PixelBoxIntentsUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		499F63E72151EDAD001DBD8F /* PixelBoxIntents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 499F63CF2151EDAD001DBD8F /* PixelBoxIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		499F63F02151EF6A001DBD8F /* MessageInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499F63EF2151EF6A001DBD8F /* MessageInfoController.swift */; };
+		499F63F12151EF6A001DBD8F /* MessageInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499F63EF2151EF6A001DBD8F /* MessageInfoController.swift */; };
+		499F63F32151EFB0001DBD8F /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 499F63F22151EFB0001DBD8F /* Intents.intentdefinition */; };
+		499F63F42151EFB0001DBD8F /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 499F63F22151EFB0001DBD8F /* Intents.intentdefinition */; };
+		499F63F62151F03C001DBD8F /* IntentVisualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499F63F52151F03B001DBD8F /* IntentVisualViewController.swift */; };
+		499F63F82151F10D001DBD8F /* RainHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499F63F72151F10D001DBD8F /* RainHandler.swift */; };
+		499F63F92151F474001DBD8F /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 499F63F22151EFB0001DBD8F /* Intents.intentdefinition */; };
+		49A3012E212B578A001135FA /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A3012D212B578A001135FA /* ColorPickerViewController.swift */; };
+		49A98A14216D2ED800652E5F /* PixelValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A98A13216D2ED800652E5F /* PixelValue.swift */; };
+		49E7ED1A212B005F0056BDED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E7ED19212B005F0056BDED /* AppDelegate.swift */; };
+		49E7ED1C212B005F0056BDED /* PixelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E7ED1B212B005F0056BDED /* PixelViewController.swift */; };
+		49E7ED1E212B005F0056BDED /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E7ED1D212B005F0056BDED /* OtherViewController.swift */; };
+		49E7ED26212B00610056BDED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49E7ED24212B00610056BDED /* LaunchScreen.storyboard */; };
+		49E7ED2E212B03970056BDED /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E7ED2D212B03970056BDED /* TabBarController.swift */; };
+		49E7ED30212B04310056BDED /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E7ED2F212B04310056BDED /* App.swift */; };
+		49E7ED32212B04440056BDED /* AmbiAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E7ED31212B04440056BDED /* AmbiAPI.swift */; };
+		49E7ED39212B04580056BDED /* FLPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E7ED34212B04580056BDED /* FLPresentation.swift */; };
+		49E7ED3A212B04580056BDED /* AnimationDescriptors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E7ED35212B04580056BDED /* AnimationDescriptors.swift */; };
+		49E7ED3B212B04580056BDED /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E7ED37212B04580056BDED /* Extentions.swift */; };
+		49E7ED3C212B04580056BDED /* Operators_and_extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E7ED38212B04580056BDED /* Operators_and_extensions.swift */; };
+		49E7ED3E212B08210056BDED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49E7ED3D212B08210056BDED /* Assets.xcassets */; };
+		49E7ED40212B2AC70056BDED /* ViewHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E7ED3F212B2AC70056BDED /* ViewHelpers.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		499F63E22151EDAD001DBD8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49E7ED0E212B005F0056BDED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 499F63D72151EDAD001DBD8F;
+			remoteInfo = PixelBoxIntentsUI;
+		};
+		499F63E52151EDAD001DBD8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49E7ED0E212B005F0056BDED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 499F63CE2151EDAD001DBD8F;
+			remoteInfo = PixelBoxIntents;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		499F63EE2151EDAD001DBD8F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				499F63E42151EDAD001DBD8F /* PixelBoxIntentsUI.appex in Embed App Extensions */,
+				499F63E72151EDAD001DBD8F /* PixelBoxIntents.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0E23DE619341AA21021A265F /* Pods_PixelBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PixelBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4926D4B8212B783F003DD4AE /* ColorWheel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorWheel.swift; sourceTree = "<group>"; };
+		4941315D212C775200909461 /* ImageSave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSave.swift; sourceTree = "<group>"; };
+		49558DE32131CA45003190A7 /* SavingData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavingData.swift; sourceTree = "<group>"; };
+		49558DE52131CA71003190A7 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		499191A221443F4F00B82E2E /* pxl.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pxl.pb.swift; sourceTree = "<group>"; };
+		499F63CA2151ED2F001DBD8F /* PixelBox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PixelBox.entitlements; sourceTree = "<group>"; };
+		499F63CF2151EDAD001DBD8F /* PixelBoxIntents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PixelBoxIntents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		499F63D12151EDAD001DBD8F /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		499F63D32151EDAD001DBD8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		499F63D82151EDAD001DBD8F /* PixelBoxIntentsUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PixelBoxIntentsUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		499F63D92151EDAD001DBD8F /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		499F63DC2151EDAD001DBD8F /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		499F63E12151EDAD001DBD8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		499F63EF2151EF6A001DBD8F /* MessageInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageInfoController.swift; sourceTree = "<group>"; };
+		499F63F22151EFB0001DBD8F /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		499F63F52151F03B001DBD8F /* IntentVisualViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntentVisualViewController.swift; sourceTree = "<group>"; };
+		499F63F72151F10D001DBD8F /* RainHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainHandler.swift; sourceTree = "<group>"; };
+		49A3012D212B578A001135FA /* ColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
+		49A98A13216D2ED800652E5F /* PixelValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelValue.swift; sourceTree = "<group>"; };
+		49E7ED16212B005F0056BDED /* PixelBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PixelBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49E7ED19212B005F0056BDED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		49E7ED1B212B005F0056BDED /* PixelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelViewController.swift; sourceTree = "<group>"; };
+		49E7ED1D212B005F0056BDED /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
+		49E7ED25212B00610056BDED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		49E7ED27212B00610056BDED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49E7ED2D212B03970056BDED /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		49E7ED2F212B04310056BDED /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		49E7ED31212B04440056BDED /* AmbiAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmbiAPI.swift; sourceTree = "<group>"; };
+		49E7ED34212B04580056BDED /* FLPresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FLPresentation.swift; sourceTree = "<group>"; };
+		49E7ED35212B04580056BDED /* AnimationDescriptors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationDescriptors.swift; sourceTree = "<group>"; };
+		49E7ED37212B04580056BDED /* Extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		49E7ED38212B04580056BDED /* Operators_and_extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators_and_extensions.swift; sourceTree = "<group>"; };
+		49E7ED3D212B08210056BDED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49E7ED3F212B2AC70056BDED /* ViewHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewHelpers.swift; sourceTree = "<group>"; };
+		A18942ED21C42A87D359933A /* Pods-PixelBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PixelBox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PixelBox/Pods-PixelBox.debug.xcconfig"; sourceTree = "<group>"; };
+		F1B85521B9588EEF47D96B70 /* Pods-PixelBox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PixelBox.release.xcconfig"; path = "Pods/Target Support Files/Pods-PixelBox/Pods-PixelBox.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		499F63CC2151EDAD001DBD8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		499F63D52151EDAD001DBD8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				499F63DA2151EDAD001DBD8F /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49E7ED13212B005F0056BDED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1901D8F5C0208CC8D6BFA021 /* Pods_PixelBox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4955653B216D2C6A00D8FA75 /* OtherFiles */ = {
+			isa = PBXGroup;
+			children = (
+				499F63CA2151ED2F001DBD8F /* PixelBox.entitlements */,
+				49E7ED24212B00610056BDED /* LaunchScreen.storyboard */,
+				49E7ED27212B00610056BDED /* Info.plist */,
+			);
+			path = OtherFiles;
+			sourceTree = "<group>";
+		};
+		4955653C216D2CC800D8FA75 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				49E7ED2D212B03970056BDED /* TabBarController.swift */,
+				49E7ED2F212B04310056BDED /* App.swift */,
+				499191A221443F4F00B82E2E /* pxl.pb.swift */,
+				49558DE52131CA71003190A7 /* Activity.swift */,
+				49558DE32131CA45003190A7 /* SavingData.swift */,
+				4926D4B8212B783F003DD4AE /* ColorWheel.swift */,
+				4941315D212C775200909461 /* ImageSave.swift */,
+				49A3012D212B578A001135FA /* ColorPickerViewController.swift */,
+				49E7ED3F212B2AC70056BDED /* ViewHelpers.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		499F63D02151EDAD001DBD8F /* PixelBoxIntents */ = {
+			isa = PBXGroup;
+			children = (
+				499F63EF2151EF6A001DBD8F /* MessageInfoController.swift */,
+				499F63D12151EDAD001DBD8F /* IntentHandler.swift */,
+				499F63F22151EFB0001DBD8F /* Intents.intentdefinition */,
+				499F63D32151EDAD001DBD8F /* Info.plist */,
+				499F63F72151F10D001DBD8F /* RainHandler.swift */,
+			);
+			path = PixelBoxIntents;
+			sourceTree = "<group>";
+		};
+		499F63DB2151EDAD001DBD8F /* PixelBoxIntentsUI */ = {
+			isa = PBXGroup;
+			children = (
+				499F63DC2151EDAD001DBD8F /* IntentViewController.swift */,
+				499F63F52151F03B001DBD8F /* IntentVisualViewController.swift */,
+				499F63E12151EDAD001DBD8F /* Info.plist */,
+			);
+			path = PixelBoxIntentsUI;
+			sourceTree = "<group>";
+		};
+		49E7ED0D212B005F0056BDED = {
+			isa = PBXGroup;
+			children = (
+				49E7ED18212B005F0056BDED /* PixelBox */,
+				499F63D02151EDAD001DBD8F /* PixelBoxIntents */,
+				499F63DB2151EDAD001DBD8F /* PixelBoxIntentsUI */,
+				4955653B216D2C6A00D8FA75 /* OtherFiles */,
+				49E7ED17212B005F0056BDED /* Products */,
+				49E7ED3D212B08210056BDED /* Assets.xcassets */,
+				E3BFF90E57EB8F6F5968336D /* Pods */,
+				F83CFD0909E50693BDA65C91 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		49E7ED17212B005F0056BDED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49E7ED16212B005F0056BDED /* PixelBox.app */,
+				499F63CF2151EDAD001DBD8F /* PixelBoxIntents.appex */,
+				499F63D82151EDAD001DBD8F /* PixelBoxIntentsUI.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49E7ED18212B005F0056BDED /* PixelBox */ = {
+			isa = PBXGroup;
+			children = (
+				49E7ED19212B005F0056BDED /* AppDelegate.swift */,
+				49E7ED1B212B005F0056BDED /* PixelViewController.swift */,
+				49A98A13216D2ED800652E5F /* PixelValue.swift */,
+				49E7ED1D212B005F0056BDED /* OtherViewController.swift */,
+				49E7ED31212B04440056BDED /* AmbiAPI.swift */,
+				4955653C216D2CC800D8FA75 /* Utility */,
+				49E7ED36212B04580056BDED /* Extentions */,
+				49E7ED33212B04580056BDED /* Transition */,
+			);
+			path = PixelBox;
+			sourceTree = "<group>";
+		};
+		49E7ED33212B04580056BDED /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				49E7ED34212B04580056BDED /* FLPresentation.swift */,
+				49E7ED35212B04580056BDED /* AnimationDescriptors.swift */,
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
+		49E7ED36212B04580056BDED /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				49E7ED37212B04580056BDED /* Extentions.swift */,
+				49E7ED38212B04580056BDED /* Operators_and_extensions.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		E3BFF90E57EB8F6F5968336D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A18942ED21C42A87D359933A /* Pods-PixelBox.debug.xcconfig */,
+				F1B85521B9588EEF47D96B70 /* Pods-PixelBox.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F83CFD0909E50693BDA65C91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E23DE619341AA21021A265F /* Pods_PixelBox.framework */,
+				499F63D92151EDAD001DBD8F /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		499F63CE2151EDAD001DBD8F /* PixelBoxIntents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 499F63EB2151EDAD001DBD8F /* Build configuration list for PBXNativeTarget "PixelBoxIntents" */;
+			buildPhases = (
+				499F63CB2151EDAD001DBD8F /* Sources */,
+				499F63CC2151EDAD001DBD8F /* Frameworks */,
+				499F63CD2151EDAD001DBD8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PixelBoxIntents;
+			productName = PixelBoxIntents;
+			productReference = 499F63CF2151EDAD001DBD8F /* PixelBoxIntents.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		499F63D72151EDAD001DBD8F /* PixelBoxIntentsUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 499F63E82151EDAD001DBD8F /* Build configuration list for PBXNativeTarget "PixelBoxIntentsUI" */;
+			buildPhases = (
+				499F63D42151EDAD001DBD8F /* Sources */,
+				499F63D52151EDAD001DBD8F /* Frameworks */,
+				499F63D62151EDAD001DBD8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PixelBoxIntentsUI;
+			productName = PixelBoxIntentsUI;
+			productReference = 499F63D82151EDAD001DBD8F /* PixelBoxIntentsUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		49E7ED15212B005F0056BDED /* PixelBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49E7ED2A212B00610056BDED /* Build configuration list for PBXNativeTarget "PixelBox" */;
+			buildPhases = (
+				0EF4F39FF51264D1246723FB /* [CP] Check Pods Manifest.lock */,
+				49E7ED12212B005F0056BDED /* Sources */,
+				49E7ED13212B005F0056BDED /* Frameworks */,
+				49E7ED14212B005F0056BDED /* Resources */,
+				3F5BEEEE14ABD9F826CBA06A /* [CP] Embed Pods Frameworks */,
+				499F63EE2151EDAD001DBD8F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				499F63E32151EDAD001DBD8F /* PBXTargetDependency */,
+				499F63E62151EDAD001DBD8F /* PBXTargetDependency */,
+			);
+			name = PixelBox;
+			productName = PixelBox;
+			productReference = 49E7ED16212B005F0056BDED /* PixelBox.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49E7ED0E212B005F0056BDED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Jmade Technologies";
+				TargetAttributes = {
+					499F63CE2151EDAD001DBD8F = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					499F63D72151EDAD001DBD8F = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					49E7ED15212B005F0056BDED = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 49E7ED11212B005F0056BDED /* Build configuration list for PBXProject "PixelBox" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49E7ED0D212B005F0056BDED;
+			productRefGroup = 49E7ED17212B005F0056BDED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49E7ED15212B005F0056BDED /* PixelBox */,
+				499F63CE2151EDAD001DBD8F /* PixelBoxIntents */,
+				499F63D72151EDAD001DBD8F /* PixelBoxIntentsUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		499F63CD2151EDAD001DBD8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		499F63D62151EDAD001DBD8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49E7ED14212B005F0056BDED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49E7ED3E212B08210056BDED /* Assets.xcassets in Resources */,
+				49E7ED26212B00610056BDED /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EF4F39FF51264D1246723FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PixelBox-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F5BEEEE14ABD9F826CBA06A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PixelBox/Pods-PixelBox-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftProtobuf/SwiftProtobuf.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftProtobuf.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PixelBox/Pods-PixelBox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		499F63CB2151EDAD001DBD8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				499F63F82151F10D001DBD8F /* RainHandler.swift in Sources */,
+				499F63F32151EFB0001DBD8F /* Intents.intentdefinition in Sources */,
+				499F63D22151EDAD001DBD8F /* IntentHandler.swift in Sources */,
+				499F63F02151EF6A001DBD8F /* MessageInfoController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		499F63D42151EDAD001DBD8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				499F63F62151F03C001DBD8F /* IntentVisualViewController.swift in Sources */,
+				499F63F42151EFB0001DBD8F /* Intents.intentdefinition in Sources */,
+				499F63DD2151EDAD001DBD8F /* IntentViewController.swift in Sources */,
+				499F63F12151EF6A001DBD8F /* MessageInfoController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49E7ED12212B005F0056BDED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				499191A321443F4F00B82E2E /* pxl.pb.swift in Sources */,
+				49558DE42131CA45003190A7 /* SavingData.swift in Sources */,
+				49E7ED1E212B005F0056BDED /* OtherViewController.swift in Sources */,
+				49E7ED2E212B03970056BDED /* TabBarController.swift in Sources */,
+				49A3012E212B578A001135FA /* ColorPickerViewController.swift in Sources */,
+				49E7ED1A212B005F0056BDED /* AppDelegate.swift in Sources */,
+				4941315E212C775200909461 /* ImageSave.swift in Sources */,
+				49A98A14216D2ED800652E5F /* PixelValue.swift in Sources */,
+				49558DE62131CA71003190A7 /* Activity.swift in Sources */,
+				49E7ED39212B04580056BDED /* FLPresentation.swift in Sources */,
+				49E7ED30212B04310056BDED /* App.swift in Sources */,
+				49E7ED1C212B005F0056BDED /* PixelViewController.swift in Sources */,
+				49E7ED40212B2AC70056BDED /* ViewHelpers.swift in Sources */,
+				499F63F92151F474001DBD8F /* Intents.intentdefinition in Sources */,
+				49E7ED32212B04440056BDED /* AmbiAPI.swift in Sources */,
+				4926D4B9212B783F003DD4AE /* ColorWheel.swift in Sources */,
+				49E7ED3C212B04580056BDED /* Operators_and_extensions.swift in Sources */,
+				49E7ED3A212B04580056BDED /* AnimationDescriptors.swift in Sources */,
+				49E7ED3B212B04580056BDED /* Extentions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		499F63E32151EDAD001DBD8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 499F63D72151EDAD001DBD8F /* PixelBoxIntentsUI */;
+			targetProxy = 499F63E22151EDAD001DBD8F /* PBXContainerItemProxy */;
+		};
+		499F63E62151EDAD001DBD8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 499F63CE2151EDAD001DBD8F /* PixelBoxIntents */;
+			targetProxy = 499F63E52151EDAD001DBD8F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		49E7ED24212B00610056BDED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49E7ED25212B00610056BDED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		499F63E92151EDAD001DBD8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26YKVY7C4G;
+				INFOPLIST_FILE = PixelBoxIntentsUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JDM.PixelBox.PixelBoxIntentsUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		499F63EA2151EDAD001DBD8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26YKVY7C4G;
+				INFOPLIST_FILE = PixelBoxIntentsUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JDM.PixelBox.PixelBoxIntentsUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		499F63EC2151EDAD001DBD8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26YKVY7C4G;
+				INFOPLIST_FILE = PixelBoxIntents/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JDM.PixelBox.PixelBoxIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		499F63ED2151EDAD001DBD8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26YKVY7C4G;
+				INFOPLIST_FILE = PixelBoxIntents/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JDM.PixelBox.PixelBoxIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		49E7ED28212B00610056BDED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		49E7ED29212B00610056BDED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49E7ED2B212B00610056BDED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A18942ED21C42A87D359933A /* Pods-PixelBox.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "$(SRCROOT)/OtherFiles/PixelBox.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26YKVY7C4G;
+				INFOPLIST_FILE = "$(SRCROOT)/OtherFiles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JDM.PixelBox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		49E7ED2C212B00610056BDED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1B85521B9588EEF47D96B70 /* Pods-PixelBox.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "$(SRCROOT)/OtherFiles/PixelBox.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26YKVY7C4G;
+				INFOPLIST_FILE = "$(SRCROOT)/OtherFiles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JDM.PixelBox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		499F63E82151EDAD001DBD8F /* Build configuration list for PBXNativeTarget "PixelBoxIntentsUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				499F63E92151EDAD001DBD8F /* Debug */,
+				499F63EA2151EDAD001DBD8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		499F63EB2151EDAD001DBD8F /* Build configuration list for PBXNativeTarget "PixelBoxIntents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				499F63EC2151EDAD001DBD8F /* Debug */,
+				499F63ED2151EDAD001DBD8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49E7ED11212B005F0056BDED /* Build configuration list for PBXProject "PixelBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49E7ED28212B00610056BDED /* Debug */,
+				49E7ED29212B00610056BDED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49E7ED2A212B00610056BDED /* Build configuration list for PBXNativeTarget "PixelBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49E7ED2B212B00610056BDED /* Debug */,
+				49E7ED2C212B00610056BDED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49E7ED0E212B005F0056BDED /* Project object */;
+}
